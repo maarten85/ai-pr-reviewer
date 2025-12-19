@@ -4,7 +4,7 @@ LLM-powered code review orchestration
 from typing import List, Dict, Any
 from pathlib import Path
 import openai
-from ..utils import setup_logger
+from utils import setup_logger
 
 logger = setup_logger(__name__)
 

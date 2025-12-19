@@ -2,7 +2,7 @@
 Diff chunking logic to split large PRs into manageable pieces
 """
 from typing import List, Dict, Any
-from ..utils import setup_logger, should_skip_file, get_file_language
+from utils import setup_logger, should_skip_file, get_file_language
 
 logger = setup_logger(__name__)
 

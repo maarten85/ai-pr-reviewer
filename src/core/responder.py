@@ -3,7 +3,7 @@ Response formatting and GitHub comment posting
 """
 from typing import List, Dict, Any
 from datetime import datetime
-from ..utils import setup_logger
+from utils import setup_logger
 
 logger = setup_logger(__name__)
 

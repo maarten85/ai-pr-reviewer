@@ -3,7 +3,7 @@ GitHub API integration for fetching PR data
 """
 from typing import Dict, List, Any, Optional
 from github import Github, GithubException
-from ..utils import setup_logger
+from utils import setup_logger
 
 logger = setup_logger(__name__)
 
