@@ -5,8 +5,10 @@ import os
 import sys
 from pathlib import Path
 
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent))
+# Add src directory to Python path
+src_dir = Path(__file__).parent
+if str(src_dir) not in sys.path:
+    sys.path.insert(0, str(src_dir))
 
 from core import PRFetcher, DiffChunker, LLMReviewer, ResponseFormatter
 from utils import Config, setup_logger
