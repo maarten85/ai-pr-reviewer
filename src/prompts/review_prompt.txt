@@ -1,0 +1,14 @@
+PR TITLE: {pr_title}
+PR DESCRIPTION:
+{pr_description}
+
+FILE: {file_path}
+LANGUAGE: {file_language}
+
+DIFF:
+```diff
+{diff_content}
+```
+
+Please review this code change following the guidelines in the system prompt.
+Focus on the most important issues that would improve code quality, security, and maintainability.

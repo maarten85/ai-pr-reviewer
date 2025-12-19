@@ -1,0 +1,42 @@
+# AI PR Reviewer Configuration
+enabled: true
+
+# File handling
+max_files: 50
+max_file_size_kb: 500
+
+# Skip patterns (glob)
+skip_patterns:
+  - "*.min.js"
+  - "*.min.css"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "pnpm-lock.yaml"
+  - "*.generated.*"
+  - "dist/**"
+  - "build/**"
+  - "node_modules/**"
+  - "vendor/**"
+  - "*.lock"
+
+# Review settings
+review_mode: balanced  # strict, balanced, or lenient
+min_confidence: 0.7    # Only show issues with confidence >= 0.7
+
+# Focus areas
+focus_areas:
+  - security
+  - testing
+  - performance
+  - maintainability
+
+# LLM settings
+llm:
+  model: gpt-4-turbo-preview
+  temperature: 0.3
+  max_tokens: 2000
+
+# Team guidelines (optional)
+guidelines: []
+  # - "Use TypeScript strict mode"
+  # - "All public APIs must have JSDoc comments"
